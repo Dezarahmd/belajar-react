@@ -1,17 +1,30 @@
 export default function HelloWorld() {
+
+    const props = {
+        text: "Belajar React from spread syntax",
+    }
+
     return (
         <div>
-            <h1>Welcome to react</h1>
-            <p>Belajar react cuy</p>
+            <HelloWorldHeader {...props}/>
+            <HelloWorldParagraph/>
         </div>
     )
 }
 
-function HelloWorldParagraph() {
+function HelloWorldHeader({text = "Belajar React"}) {
     return (
-        <div>
-            <p>asikk</p>
-        </div>
+        <h1 className="text-red-500 bg-cyan-500">{text.toUpperCase()}</h1>
+    )
+}
 
+function HelloWorldParagraph() {
+    const text = "Belajar react cuy"
+    const style = {
+        color: "blue",
+        backgroundColor: "yellow",
+    }
+    return (
+        <p style={style}>{text.toLowerCase()}</p>
     )
 }

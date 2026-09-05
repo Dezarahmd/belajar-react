@@ -1,0 +1,8 @@
+MATERI REACT DAY 1:
+1. Component
+2. JSX
+3. Props
+4. Destructuring props
+5. Mengirim props
+6. Spread syntax
+7. Nested Component

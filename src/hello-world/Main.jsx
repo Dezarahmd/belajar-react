@@ -1,12 +1,15 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import {HelloWorld, HelloWorldParagraph} from "./HelloWorld";
+import HelloWorld from "./HelloWorld";
+import "../index.css";
+import Container from "./Container";
 
 createRoot(document.getElementById("root"))
     .render (
         <StrictMode>
-            <HelloWorld/>
-            <HelloWorldParagraph/>
+            <Container>
+                <HelloWorld/>
+            </Container>
         </StrictMode>
     )
 
