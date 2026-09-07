@@ -1,24 +1,24 @@
-import { useState } from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Button(props) {
+  const colorClasses = {
+    blue: 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded',
+    red: 'bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded',
+    green: 'bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded',
+  }
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-6 bg-slate-900 text-white">
-      <h1 className="text-4xl font-bold text-red-400">
-        Belajar React + Tailwind CSS v4
-      </h1>
-      <p className="text-slate-300">
-        Edit <code className="bg-slate-800 px-2 py-1 rounded">src/App.jsx</code> dan simpan untuk mencoba Hot Reload.
-      </p>
-      <button
-        onClick={() => setCount((c) => c + 1)}
-        className="px-5 py-2 rounded-lg bg-sky-500 hover:bg-sky-600 transition-colors font-medium cursor-pointer"
-      >
-        Hitungan: {count}
-      </button>
+    <button className={`${colorClasses[props.color]} text-white font-bold py-2 px-4 rounded-lg shadow transition`}>{props.label}</button>
+  )
+} 
+
+
+function App(){
+  return (
+    <div className='flex gap-3 p-5'>
+      <Button label='Beli Sekarang' color='blue'/>
+      <Button label="Hapus" color="red" />
+      <Button label="Tambah ke keranjang" color="green" />      
     </div>
   )
 }
 
-export default App
+export default App                                                                                                                              
