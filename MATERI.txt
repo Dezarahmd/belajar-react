@@ -6,3 +6,5 @@ MATERI REACT DAY 1:
 5. Mengirim props
 6. Spread syntax
 7. Nested Component
+
+test
