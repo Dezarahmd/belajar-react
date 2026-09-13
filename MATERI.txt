@@ -7,4 +7,11 @@ MATERI REACT DAY 1:
 6. Spread syntax
 7. Nested Component
 
-testinggg
+MATERI REACT DAY 2:
+1. Style
+2. Conditional
+3. Null Component
+4. Ternary Operator
+5. Logical AND
+6. Collection component
+7. Component key
