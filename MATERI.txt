@@ -15,3 +15,12 @@ MATERI REACT DAY 2:
 5. Logical AND
 6. Collection component
 7. Component key
+
+
+MATERI REACT DAY 3:
+1. Pure Function 
+2. Pure Component
+3. Event Handler
+4. Event Object
+5. Event Propagation
+6. Prevent Default
