@@ -24,3 +24,10 @@ MATERI REACT DAY 3:
 4. Event Object
 5. Event Propagation
 6. Prevent Default
+
+
+MATERI REACT DAY 4:
+1. Hooks
+2. useState
+3. Render
+4. Trigger Render

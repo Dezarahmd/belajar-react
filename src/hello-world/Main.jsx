@@ -9,6 +9,8 @@ import AlertButton from "../button/AlertButton.jsx";
 import MyButton from "../button/MyButton.jsx";
 import Toolbar from "../button/ToolBar.jsx";
 import SearchForm from "../form/SearchForm.jsx";
+import SayHelloForm from "../form/SayHelloForm.jsx";
+import Counter from "../form/Counter.jsx";
 
 createRoot(document.getElementById("root"))
     .render (
@@ -22,8 +24,10 @@ createRoot(document.getElementById("root"))
                 <Toolbar onClick={(e) => {
                     e.stopPropagation();
                     alert("You Click Toolbar")
-                }}/>
+                }}/>    
                 <SearchForm/>
+                <SayHelloForm/>
+                <Counter/>
             </Container>
         </StrictMode>
     )
