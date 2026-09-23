@@ -30,4 +30,14 @@ MATERI REACT DAY 4:
 1. Hooks
 2. useState
 3. Render
-4. Trigger Render
+4. Snapshot
+
+
+MATERI REACT DAY 5:
+1. State Update
+2. Object di state
+3. Immutable data
+4. Nested Object
+5. Immer Library
+6. Use Immer
+7. Array di state (mengubah array)

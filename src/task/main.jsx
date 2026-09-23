@@ -1,13 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "../index.css";
-import App from "./DAY 4/CartItem.jsx";
-import Cart from "./DAY 4/CartItem.jsx"
-
+import Task from "./Task.jsx"
 
 createRoot(document.getElementById("root"))
-    .render (
+    .render(
         <StrictMode>
-            <Cart/>
+            <Task/>
         </StrictMode>
     )

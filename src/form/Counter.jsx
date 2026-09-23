@@ -4,7 +4,10 @@ export default function Counter(){
     let [counter, setCounter] = useState(0)
 
     function hendleClick(){
-        setCounter(counter + 1)
+        setCounter((c) => c + 1);
+        setCounter((c) => c + 1);
+        setCounter((c) => c + 1);
+
         console.log(counter)
     }
 
