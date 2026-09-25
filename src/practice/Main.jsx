@@ -1,12 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "../index.css";
-import UserSettings from "./DAY 5/UserSettings.jsx";
-
+import App from "./Cafe/App.jsx";
 
 createRoot(document.getElementById("root"))
     .render (
         <StrictMode>
-            <UserSettings/>
+            <App/>
         </StrictMode>
     )
