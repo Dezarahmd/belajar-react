@@ -41,3 +41,6 @@ MATERI REACT DAY 5:
 5. Immer Library
 6. Use Immer
 7. Array di state (mengubah array)
+
+MATERI REACT DAY 6:
+1. Sharing state
