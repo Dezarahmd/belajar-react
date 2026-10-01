@@ -43,4 +43,8 @@ MATERI REACT DAY 5:
 7. Array di state (mengubah array)
 
 MATERI REACT DAY 6:
-1. Sharing state
+1. Sharing state (Masih kurang ngerti)
+2. Mempertahankan State
+3. Posisi Component
+4. Component sama di posisi yang sama
+5. Reset state
