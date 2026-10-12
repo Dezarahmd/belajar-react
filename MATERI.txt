@@ -48,3 +48,9 @@ MATERI REACT DAY 6:
 3. Posisi Component
 4. Component sama di posisi yang sama
 5. Reset state
+
+MATERI REACT DAY 7:
+1. Mengubah posisi component
+2. Posisi component berbeda
+3. Menggunakan key
+4. Reducer

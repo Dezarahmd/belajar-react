@@ -10,7 +10,7 @@ export default function CounterApp(){
 
     return (
         <div>
-            {show2 ? <Counter name="budi"/> : <p>hilang</p>}
+            {show2 ? <Counter key="Budi" name="Budi"/> : <Counter key="eko" name="Budi"/>}
             <input type="checkbox" checked={show2} onChange={handleChange}/> Tampilkan Counter 2
         </div>
     )
