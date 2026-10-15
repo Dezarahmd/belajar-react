@@ -1,10 +1,10 @@
 import React from 'react'
-import TicketSelector from './TicketSelector'
+import RegistrationForm from './RegistrationForm'
 
 const App = () => {
   return (
     <div>
-        <TicketSelector/>
+        <RegistrationForm/>
     </div>
   )
 }
