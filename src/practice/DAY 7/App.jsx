@@ -1,10 +1,10 @@
 import React from 'react'
-import RegistrationForm from './RegistrationForm'
+import { ProjectManager } from './ProjectManager'
 
 const App = () => {
   return (
     <div>
-        <RegistrationForm/>
+        <ProjectManager/>
     </div>
   )
 }
