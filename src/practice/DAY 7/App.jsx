@@ -1,10 +1,11 @@
 import React from 'react'
-import { ProjectManager } from './ProjectManager'
+import StockManagement from './StockManagement'
+
 
 const App = () => {
   return (
     <div>
-        <ProjectManager/>
+        <StockManagement/>
     </div>
   )
 }
