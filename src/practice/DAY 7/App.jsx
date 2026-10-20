@@ -1,11 +1,11 @@
 import React from 'react'
-import StockManagement from './StockManagement'
+import InventoryManagement from './InventoryManagement'
 
 
 const App = () => {
   return (
     <div>
-        <StockManagement/>
+        <InventoryManagement/>
     </div>
   )
 }
