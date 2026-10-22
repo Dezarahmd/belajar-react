@@ -2,6 +2,7 @@ import React, { useReducer } from "react"; // <- Ganti useImmer jadi useReducer
 import NoteForm from "./NoteForm";
 import NoteList from "./NoteList";
 import { useImmer, useImmerReducer } from "use-immer";
+import { NotesContext, NotesDispatchContext } from "./NoteContext";
 
 let id = 0;
 
@@ -33,38 +34,15 @@ function noteReducer(notes, action) {
 const NoteApp = () => {
   const [notes, dispatch] = useImmerReducer(noteReducer, initialNotes);
 
-  function handleAddNote(text) {
-    dispatch({
-      type: "ADD_NOTE",
-      text: text,
-    });
-  }
-
-  function handleChangeNote(note) {
-    dispatch({
-      type: "CHANGE_NOTE",
-      id: note.id,
-      text: note.text,
-      done: note.done,
-    });
-  }
-
-  function handleDeleteNote(note) {
-    dispatch({
-      type: "DELETE_NOTE",
-      id: note.id,
-    });
-  }
-
   return (
     <div>
-      <h1>Note App</h1>
-      <NoteForm onAddNote={handleAddNote} />
-      <NoteList
-        notes={notes}
-        onChange={handleChangeNote}
-        onDelete={handleDeleteNote}
-      />
+      <NotesContext.Provider value={notes}>
+        <NotesDispatchContext.Provider value={dispatch}>
+          <h1>note app</h1>
+          <NoteForm/>
+          <NoteList/>
+        </NotesDispatchContext.Provider>
+      </NotesContext.Provider>
     </div>
   );
 };

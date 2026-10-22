@@ -52,3 +52,8 @@ MATERI REACT DAY 6:
 MATERI REACT DAY 7:
 1. Reducer
 2. Immer reducer
+
+MATERI REACT DAY 8:
+1. Context
+2. Context dan State
+3. COntext dan Reducer

@@ -1,12 +1,14 @@
 import Note from "./Note";
-import React from 'react'
+import React, { useContext } from 'react'
+import { NotesContext } from "./NoteContext";
 
-const NoteList = ({notes, onChange, onDelete}) => {
+const NoteList = () => {
+  const notes = useContext(NotesContext)
   return (
     <ul>
         {notes.map(note => (
             <li key={note.id}>
-                <Note note={note} onChange={onChange} onDelete={onDelete}/>
+                <Note note={note}/>
             </li>
         ))}
     </ul>
