@@ -1,31 +1,19 @@
-import { useContext } from "react";
-import DaftarProduk from "./DaftarProduk";
-import Footer from "./Footer";
-import Header from "./Header";
-import TemaProvider, { TemaContext } from "./TemaContext";
-
-function KontenApp() {
-    const [isLight] = useContext(TemaContext);
-
-    return (
-        <div
-            className={`min-h-screen ${
-                isLight
-                    ? "bg-white text-gray-900"
-                    : "bg-gray-900 text-white"
-            }`}
-        >
-            <Header />
-            <DaftarProduk />
-            <Footer />
-        </div>
-    );
-}
+import React from 'react';
+import NotificationProvider  from './NotificationContext';
+import Toast  from './Toast';
+import HeaderNotification  from './HeaderNotification';
+import {FormUser}  from './FormUser';
 
 export default function App() {
-    return (
-        <TemaProvider>
-            <KontenApp />
-        </TemaProvider>
-    );
+  // Nanti handler & state dari Context akan dihubungkan di sini atau di dalam Provider
+
+  return (
+    <NotificationProvider>
+      <Toast/>
+      <HeaderNotification/>
+      <main className="w-full">
+        <FormUser />
+      </main>
+    </NotificationProvider>
+  );
 }
