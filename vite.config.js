@@ -16,7 +16,9 @@ export default defineConfig({
         note: "note.html",
         profile: "profile.html",
         timer: "timer.hrml",
-        guestbook: "guestbook.html"
+        guestbook: "guestbook.html",
+        product: "product.html",
+        online: "online.html"
       }
     }
   }

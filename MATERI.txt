@@ -57,3 +57,11 @@ MATERI REACT DAY 8:
 1. Context
 2. Context dan State
 3. COntext dan Reducer
+
+MATERI REACT DAY 9:
+1. Ref
+2. Effect Hooks: 
+- Effect clean up
+- Effect dependencies
+3. Async await in Effect
+4. Memo
