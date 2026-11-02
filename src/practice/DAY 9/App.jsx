@@ -1,7 +1,7 @@
-import ProductFilter from "./ProductFilter";
+import WarehouseDashboard from "./WarehouseDashboard"
 
 export default function App(){
     return (
-        <ProductFilter/>
+        <WarehouseDashboard/>
     )
 }
