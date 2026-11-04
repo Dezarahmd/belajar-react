@@ -1,7 +1,7 @@
-import WarehouseDashboard from "./WarehouseDashboard"
+import CustomerDashboard from "./CustomerDashboard"
 
 export default function App(){
     return (
-        <WarehouseDashboard/>
+        <CustomerDashboard/>
     )
 }
